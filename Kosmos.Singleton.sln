@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kosmos.Singleton", "Kosmos.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kosmos.Singleton.Test", "Kosmos.Singleton.Test\Kosmos.Singleton.Test.csproj", "{F0EBB079-E65A-45FB-93CB-C698C3C0AA22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kosmos.Singleton.TestForWeb", "Kosmos.Singleton.TestForWeb\Kosmos.Singleton.TestForWeb.csproj", "{8866E095-152D-4862-B738-DA223260CFC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F0EBB079-E65A-45FB-93CB-C698C3C0AA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0EBB079-E65A-45FB-93CB-C698C3C0AA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0EBB079-E65A-45FB-93CB-C698C3C0AA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8866E095-152D-4862-B738-DA223260CFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8866E095-152D-4862-B738-DA223260CFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8866E095-152D-4862-B738-DA223260CFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8866E095-152D-4862-B738-DA223260CFC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

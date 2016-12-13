@@ -11,7 +11,10 @@ namespace Kosmos.Singleton
     public static class SingleHttpClient
     {
         private static string _logServerAddress = ConfigurationManager.AppSettings["LogServerAddress"];
-        private static string _identity = Assembly.GetExecutingAssembly().FullName;
+        private static string _identity = ConfigurationManager.AppSettings["Identity"];
+
+        public static string Identity { get; set; }
+        public static string LogServerAssress { get; set; }
 
         public static HttpClient Client { get; set; }
         static SingleHttpClient()
@@ -21,7 +24,7 @@ namespace Kosmos.Singleton
 
         public static void PostException<V>(V v)
         {
-            Task.Run(async () => await Client.PostAsJsonAsync(_logServerAddress, new { Identity = _identity, Message = JsonConvert.SerializeObject(v) }));
+            Task.Run(async () => await Client.PostAsJsonAsync(LogServerAssress ?? _logServerAddress, new { Identity = Identity ?? _identity, Message = JsonConvert.SerializeObject(v) }));
         }
     }
 }

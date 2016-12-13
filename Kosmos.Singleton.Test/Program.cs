@@ -11,11 +11,11 @@ namespace Kosmos.Singleton.Test
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 3000; i++)
+            for (int i = 0; i < 1; i++)
             {
                 SingleHttpClient.PostException(new { test = "yongsheng", date = DateTime.Now });
             }
-            Thread.Sleep(TimeSpan.FromSeconds(60));
+            Thread.Sleep(TimeSpan.FromSeconds(10));
         }
     }
 }
